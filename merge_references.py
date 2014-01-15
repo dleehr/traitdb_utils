@@ -33,7 +33,7 @@ def replace_references(tokens=[], lookup_table={}):
 
 def lookup_reference(token='', lookup_table={}):
 	if token not in lookup_table:
-		return None
+		return token
 	return lookup_table[token]
 
 def main():
