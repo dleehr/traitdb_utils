@@ -42,6 +42,7 @@ def main():
 		reader = csv.DictReader(infile)
 		with open(OUTPUT_CSVFILE, 'wb') as outfile:
 			writer = csv.DictWriter(outfile, reader.fieldnames)
+			writer.writeheader()
 			for row_dict in reader:
 				merge_references(row_dict, lookup_table)
 				writer.writerow(row_dict)
