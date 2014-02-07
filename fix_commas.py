@@ -5,7 +5,7 @@ BASE_PATH = "/Users/dan/Data/SocialTraits/csv/"
 SOCIALTRAITS_CSVFILE = BASE_PATH + "SocialTraits.csv"
 OUTPUT_CSVFILE = BASE_PATH + "SocialTraits-CommasReplaced.csv"
 
-NUMBER = re.compile(r"^([0-9]+)(,)([0-9]+)$")
+NUMBER = re.compile(r"^([0-9]+)((,)([0-9]+))+$")
 
 def remove_commas(cell):
     return cell.replace(',','')
