@@ -2,7 +2,7 @@ import csv
 import re
 
 BASE_PATH = "/Users/dan/Data/SocialTraits/csv/"
-SOCIALTRAITS_CSVFILE = BASE_PATH + "SocialTraits.csv"
+SOCIALTRAITS_CSVFILE = BASE_PATH + "SocialTraits-MasterDatabase_7_MARCH_13_FINAL3.csv"
 OUTPUT_CSVFILE = BASE_PATH + "SocialTraits-CommasReplaced.csv"
 
 NUMBER = re.compile(r"^([0-9]+)((,)([0-9]+))+$")
