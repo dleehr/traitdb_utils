@@ -1,19 +1,16 @@
 #!/usr/bin/env python
 
 import csv
-import re
 
 BASE_PATH = "/Users/dan/Data/TreeOfSex/csv/PlantsApril2014/"
 PLANTS_FILE = BASE_PATH + "plantsTreeOfSex.csv"
 OUTPUT_CSVFILE = BASE_PATH + "plantsTreeOfSex-copiedcolumns.csv"
 
 COLUMNS_TO_DUPLICATE = {
-    'source: Gametophytic chromosome number':
-        ['source: Gametophytic chromosome number (minimum)', 'source: Gametophytic chromosome number (mean)',],
-    'source: Sporophytic chromosome number':
-        ['source: Sporophytic chromosome number (minimum)', 'source: Sporophytic chromosome number (mean)',],
-    'source: Woodiness':
-        ['source: Woodiness count'],
+    'source: Gametophytic chromosome number (minimum)' :
+        ['source: Gametophytic chromosome number (mean)',],
+    'source: Sporophytic chromosome number (minimum)':
+        ['source: Sporophytic chromosome number (mean)',],
 }
 
 def get_source_fieldnames():
